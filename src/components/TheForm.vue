@@ -16,8 +16,11 @@ const sendFormData = () => {
     inputValue3: input3.value,
     inputValue4: input4.value,
   }
-  // console.log(formData)
   emit("sendFormData", formData)
+  input1.value = ""
+  input2.value = ""
+  input3.value = ""
+  input4.value = ""
 }
 
 </script>
